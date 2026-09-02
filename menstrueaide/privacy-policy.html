@@ -31,32 +31,32 @@
 <body>
 <main>
   <h1>Men's True Aide Privacy Policy</h1>
-  <p class="updated">Last updated 17 August 2026</p>
+  <p class="updated">Last updated 2 September 2026</p>
 
   <p>Men's True Aide is made by LiveStack Studios. It is the companion to <a href="../heyhun/">Hey Hun</a>. This policy explains what the app collects from you, what it receives about the person you support, and what happens to all of it. It describes what the app actually does — if we change that, we change this page.</p>
 
   <div class="key">
-    <strong>The short version.</strong> We collect very little about you: a first name, an email address, your timezone, and a record of the check-ins you complete. You cannot type anything into this app that we store — there are no notes, no comments, no messages. Everything you see about her is a summary our server builds from settings <em>she</em> controls, and it stops the instant she says so.
+    <strong>The short version.</strong> We collect very little about you: a first name, an email address, your timezone, and a record of the check-ins you complete. The only thing you type that we store is your first name — there are no notes, no comments, no messages. Everything you see about her is a summary our server builds from settings <em>she</em> controls, and it stops the instant she says so.
   </div>
 
   <h2>What we collect about you</h2>
   <table>
     <tr><th>What</th><th>When</th><th>Why</th></tr>
-    <tr><td>Your email address</td><td>When you create an account</td><td>Sign-in. Held by Google Firebase Authentication. You can sign in with Apple, with Google, or with an email and password.</td></tr>
+    <tr><td>Your email address</td><td>When you create an account</td><td>Sign-in. Held by Google Firebase Authentication. You can sign in with Apple, with Google, or with an email and password. An email-and-password account must verify the address before the app does anything else.</td></tr>
     <tr><td>Your first name</td><td>At sign-up</td><td>So the person who invited you can see who accepted. Only a first name is requested or stored.</td></tr>
     <tr><td>Your timezone</td><td>At each sign-in</td><td>So the daily briefing notification arrives in the morning where you are, not where our server is.</td></tr>
     <tr><td>Notification token</td><td>If you allow notifications</td><td>To send the briefing and weekly forecast. Stored where only your account can read it.</td></tr>
     <tr><td>Your activity record — check-in streak, score, missions completed, badges earned, the date of your last check-in, and a count of completed missions by kind</td><td>As you use the app</td><td>The streak and badges you see on the Stats tab. Calculated on our server, one record per connection.</td></tr>
     <tr><td>Mission status</td><td>When you mark a mission done or skipped</td><td>The only thing this app writes on your behalf. It is the one signal she can see back from you.</td></tr>
     <tr><td>Sign-up number and beta flag</td><td>Once, automatically</td><td>To identify early testers. Assigned by our server; you cannot set or change it.</td></tr>
-    <tr><td>Usage and device information</td><td>Always</td><td>Google Analytics for Firebase — app version, device model, operating system, approximate region derived from your IP address, and four screen-level milestones. See <a href="#analytics">Analytics</a>.</td></tr>
+    <tr><td>One anonymous usage counter</td><td>When you open a briefing</td><td>Our own server adds one to a per-day total. No account, no target, no device details. There is no analytics SDK in the app. See <a href="#analytics">Analytics</a>.</td></tr>
   </table>
 
   <h2>What we do not collect from you</h2>
   <ul>
     <li><strong>Your age or date of birth.</strong> This app does not ask.</li>
     <li><strong>Anything you type, beyond sign-in.</strong> The only things you can type in this app are your name and email at sign-up, an invitation code, and the word DELETE to confirm account deletion. There is no notes field, no comment box, no message to her. Invitation codes are checked and never stored as your content.</li>
-    <li><strong>Your location.</strong> We do not request it. Google's analytics estimates an approximate region from your IP address.</li>
+    <li><strong>Your location.</strong> We do not request it, and there is no analytics SDK in the app to estimate it. Our hosting provider sees your IP address to deliver the service, as any server does.</li>
     <li><strong>Your microphone.</strong> The app plays background audio and never records. It requests no microphone permission, and iOS would have to ask you if it tried.</li>
     <li><strong>Your camera, photos, or contacts.</strong> No permission for any of them exists in the app.</li>
     <li><strong>Health data from your phone.</strong> The app does not connect to Apple Health and reads nothing from it.</li>
@@ -65,8 +65,8 @@
 
   <h2 id="hers">What you receive about her</h2>
   <p>You never read her account. Our server builds a separate document for your connection, containing only the fields her settings permit, and that document is the only thing your app can open. A setting that is off produces a field that is <strong>not there at all</strong> — not blank, not hidden in the app, absent.</p>
-  <p>Depending on what she has enabled, the document can include: the phase of her cycle and the day she is on, how confident that estimate is, moods and symptoms she chose to share, an energy level, her predicted next period date, a note she wrote for you, a craving and a wish, whether she is low on supplies, and daily context such as sleep, pain and where it is, stress, social battery and appetite. It can also include a short summary of her Care Profile — things she likes, what comforts her, small wins, how she prefers to be supported — and a list of things not to do.</p>
-  <p>The app also gives you a daily briefing line and a suggested mission with a title and a description. <strong>Those can contain her own words.</strong> If she has typed a specific craving, or written something in her Care Profile that she has chosen to share, that text may appear inside the suggestion so it is actually useful.</p>
+  <p>Depending on what she has enabled, the document can include: the phase of her cycle and the day she is on, how confident that estimate is, moods and symptoms she chose to share, an energy level, her predicted next period date, a note she wrote for you, a craving and a wish, whether she is low on supplies, and daily context such as sleep, pain and where it is, stress, social battery and appetite. It can also include a short summary of her Care Profile — things she likes, what comforts her, small wins, how she prefers to be supported — and a list of things not to do. If she turns off phase sharing, the briefing and the mission are built from phase-neutral text and say nothing about where she is in her cycle.</p>
+  <p>The app also gives you a daily briefing line and a suggested mission with a title and a description. <strong>Those can contain her own words, shortened to a fixed length.</strong> If she has typed a specific craving, or written something in her Care Profile that she has chosen to share, that text may appear inside the suggestion so it is actually useful.</p>
 
   <div class="warn">
     <strong>Treat all of it as private.</strong> This is another person's health information, given to you on purpose and on trust. It is for you and nobody else. Do not screenshot it, forward it, read it aloud, or joke about it. She can end your access in one tap, without warning, and she does not owe you a reason.
@@ -84,38 +84,37 @@
   <h2>Notifications</h2>
   <p>We ask permission for notifications once, after you finish Basic Training — not at launch, and never in demo mode. You can decline and the app works normally; you simply open it yourself. There are exactly two notifications:</p>
   <ul>
-    <li><strong>Daily briefing</strong>, once a day in the morning. The text is one of three fixed lines. One of them is sent when her cycle phase changes, and one is sent three days before her predicted period and only if she shares period dates — so the fact that you received it carries timing information. Neither line contains symptoms, moods, notes, or mission text.</li>
-    <li><strong>Weekly forecast</strong>, on Sundays, and only if she shares her phase. It describes the coming week in the app's own shorthand, which is a description of her cycle.</li>
+    <li><strong>Daily briefing</strong>, once a day in the morning. The text is one of two fixed lines: a "briefing ready" line, and — only if she shares her cycle phase — a line saying the phase has changed. Neither contains symptoms, moods, notes, dates, or mission text. The detail is inside the app, never on your lock screen.</li>
+    <li><strong>Weekly forecast</strong>, on Sundays, and only if she shares her phase. The notification text is a fixed line with no cycle content; the forecast itself is inside the app.</li>
   </ul>
   <p>Notifications appear on your lock screen. If your phone is visible to other people, consider hiding previews in <code>Settings → Notifications</code>.</p>
 
   <h2>When she revokes, or you leave</h2>
   <p>Either of you can end the connection at any time. When that happens, our server immediately deletes every daily summary and every mission for that connection, and your app loses access to what remains. The target disappears from your list.</p>
-  <p>Your activity record for that connection — streak, score, badges — is not deleted at that moment; it is deleted if either of you deletes an account. The connection record itself is kept, marked revoked, so the same invitation cannot be replayed.</p>
+  <p>Your activity record for that connection — streak, score, badges — is deleted at the same moment. The connection record itself is kept, marked revoked, so the same invitation cannot be replayed.</p>
 
   <h2>Deleting your account</h2>
   <p>Settings → Delete Account, with a typed confirmation. This revokes every connection you hold, deletes the summaries, missions, and activity records for them, deletes the connection records themselves, deletes your user record, and deletes your sign-in. It cannot be undone.</p>
-  <p>The person who invited you is not notified — the connection simply disappears from her app, in the same way it would if she had removed it herself. We retain the invitation-code record, which holds identifiers and timestamps and no personal content. Anonymous daily counters are aggregate totals and cannot be separated out. Our server's operational logs may retain account identifiers for a period set by our hosting provider.</p>
+  <p>The person who invited you is not notified — the connection simply disappears from her app, in the same way it would if she had removed it herself. The invitation-code records tied to your account are deleted with it. You will be asked to sign in again before deletion, and if your sign-in cannot be deleted the app tells you it failed rather than reporting success. Anonymous daily counters are aggregate totals and cannot be separated out. Our server's operational logs may retain account identifiers for a period set by our hosting provider.</p>
   <p>If you cannot get into the app, email <a href="mailto:JA@livestackstudios.com">JA@livestackstudios.com</a> from your account's address and we will do it for you.</p>
 
   <h2 id="analytics">Analytics</h2>
-  <p>We use Google Analytics for Firebase to understand whether the app works, not who you are. This app reports four milestone events — completing a pairing, adding a target, switching targets, and entering demo mode — and one anonymous daily counter recording that a briefing was viewed. <strong>None of these events carries any parameter</strong>, so no event says which target, which mission, or anything about her. The daily counter is stored as a plain integer with no account attached to it.</p>
-  <p>Google's analytics component also collects, on its own, an app-instance identifier, your device model and operating system, app version, session and crash information, and an approximate region derived from your IP address. That identifier resets if you delete and reinstall the app.</p>
+  <p>There is no analytics SDK in Men's True Aide. We removed Google Analytics for Firebase in September 2026, so no app-instance identifier, device details or usage events are sent to Google's analytics service. The app keeps one anonymous daily counter on our own server — that a briefing was viewed today — stored as a plain integer with no account, target or mission attached to it. Nothing else about how you use the app is recorded.</p>
   <p>The app shows no advertising, contains no advertising network, and does not display the iOS tracking prompt — so the device's advertising identifier is not available to it and is not used.</p>
 
   <h2>Demo mode</h2>
-  <p>The "Explore the app" option runs entirely on your device against a fictional example. It writes nothing to our servers, creates no account, and never asks for notification permission. The only thing recorded is the anonymous, parameter-free event noting that demo mode was opened.</p>
+  <p>The "Explore the app" option runs entirely on your device against a fictional example. It writes nothing to our servers, creates no account, records nothing — not even that demo mode was opened — and never asks for notification permission.</p>
 
   <h2>Who we share with</h2>
   <p>We do not sell your data and we do not use it for advertising. We use these providers, who process data on our behalf:</p>
   <ul>
-    <li><strong>Google Firebase</strong> — sign-in, database, server functions, notifications, analytics. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+    <li><strong>Google Firebase</strong> — sign-in, database, server functions, and notification delivery through Firebase Cloud Messaging. Notification text never contains her cycle information. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
     <li><strong>Apple</strong> — Sign in with Apple, and delivery of notifications through Apple Push Notification service.</li>
   </ul>
   <p>The person you support sees your first name, that you completed setup, and your check-in activity for your connection with her. She does not see your email address.</p>
 
   <h2>How long we keep things</h2>
-  <p>Your account record and activity are kept until you delete your account. Summaries and missions for a connection are deleted the moment that connection ends. Invitation codes expire after 14 days.</p>
+  <p>Your account record and activity are kept until you delete your account. Summaries and missions for a connection are deleted the moment that connection ends; when she changes a sharing setting, today's summary is rebuilt to match and every earlier day is deleted; and in any case each one is deleted 30 days after its date. Invitation codes expire after 14 days, and their records are deleted once they expire. Nothing about her is kept on your phone between launches — the app holds her summary in memory only.</p>
 
   <h2>Your rights</h2>
   <p>Depending on where you live, you may have the right to access, correct, export, or delete the personal information we hold, and to object to some processing. Email <a href="mailto:JA@livestackstudios.com">JA@livestackstudios.com</a> and we will respond within 30 days. You may also complain to your local data protection authority.</p>
@@ -125,7 +124,7 @@
   <p>Men's True Aide is intended for adults. It is not directed at children and we do not knowingly collect personal information from anyone under 13. This app does not ask your date of birth; the connection is created by an account holder who has confirmed she is 18 or over. If you believe a child is using the app, contact us and we will delete the account.</p>
 
   <h2>Security</h2>
-  <p>Access is enforced on our server, not merely hidden in the app: database rules restrict every document to the accounts entitled to it, and your access to a connection's documents is re-checked against her current settings on every single read. Data is encrypted in transit and at rest by our hosting provider. No system is perfect, and we will notify affected users and the relevant authority if a breach occurs.</p>
+  <p>Access is enforced on our server, not merely hidden in the app: database rules restrict every document to the accounts entitled to it, your access to a connection's documents is re-checked on every single read, and when she changes a setting the summaries are rebuilt to match at once and earlier ones deleted. On your phone, the app keeps her summary in memory only and its files are protected by iOS Data Protection, so nothing about her is readable while your device is locked. Data is encrypted in transit and at rest by our hosting provider. No system is perfect; if a breach occurs we will notify affected users and the Federal Trade Commission as the Health Breach Notification Rule requires, within 60 days of discovery.</p>
 
   <h2>Changes</h2>
   <p>If we change this policy we will update the date at the top. Significant changes will be announced in the app.</p>
